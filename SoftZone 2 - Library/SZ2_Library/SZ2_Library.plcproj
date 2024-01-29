@@ -27,6 +27,9 @@
     <Compile Include="POUs\Function Blocks\FB_PID_Simulation.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Function Blocks\FB_Simu_NT.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Functions\fcWriteOutput.TcPOU">
       <SubType>Code</SubType>
     </Compile>

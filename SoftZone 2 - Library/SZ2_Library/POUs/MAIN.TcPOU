@@ -7,10 +7,13 @@ VAR
 	
 	rPID_Core		: REAL;
 	rPID_SUrface	: REAL;
-	abIN_HE_Fault		: ARRAY [1..12] OF BOOL;
+	abIN_HE_Fault	: ARRAY [1..12] OF BOOL;
 	
 	iT_Core			: INT;
 	iT_Surface		: INT;
+	rmA				: REAL;
+	bCore_Fault		: BOOL;
+	bSurface_Fault	: BOOL;
 	abOUT_HE_Fault	: ARRAY [1..12] OF BOOL;
 END_VAR
 ]]></Declaration>
@@ -48,7 +51,7 @@ END_VAR
                         <v n="LValue">false</v>
                         <v n="Boolean">false</v>
                         <v n="IsInstance">true</v>
-                        <v n="Id">16L</v>
+                        <v n="Id">32L</v>
                       </o>
                       <o n="OutputItems" t="OutputItemList">
                         <l2 n="OutputItems" cet="Operand">
@@ -84,6 +87,54 @@ END_VAR
                             <v n="Boolean">false</v>
                             <v n="IsInstance">false</v>
                             <v n="Id">18L</v>
+                          </o>
+                          <o>
+                            <v n="Operand">"rmA"</v>
+                            <v n="Type">"REAL"</v>
+                            <v n="Comment">""</v>
+                            <v n="SymbolComment">""</v>
+                            <v n="Address">""</v>
+                            <o n="Flags" t="Flags">
+                              <v n="Flags">0</v>
+                              <v n="Fixed">false</v>
+                              <v n="Extensible">false</v>
+                            </o>
+                            <v n="LValue">true</v>
+                            <v n="Boolean">false</v>
+                            <v n="IsInstance">false</v>
+                            <v n="Id">34L</v>
+                          </o>
+                          <o>
+                            <v n="Operand">"bCore_Fault"</v>
+                            <v n="Type">"BOOL"</v>
+                            <v n="Comment">""</v>
+                            <v n="SymbolComment">""</v>
+                            <v n="Address">""</v>
+                            <o n="Flags" t="Flags">
+                              <v n="Flags">0</v>
+                              <v n="Fixed">false</v>
+                              <v n="Extensible">false</v>
+                            </o>
+                            <v n="LValue">true</v>
+                            <v n="Boolean">false</v>
+                            <v n="IsInstance">false</v>
+                            <v n="Id">35L</v>
+                          </o>
+                          <o>
+                            <v n="Operand">"bSurface_Fault"</v>
+                            <v n="Type">"BOOL"</v>
+                            <v n="Comment">""</v>
+                            <v n="SymbolComment">""</v>
+                            <v n="Address">""</v>
+                            <o n="Flags" t="Flags">
+                              <v n="Flags">0</v>
+                              <v n="Fixed">false</v>
+                              <v n="Extensible">false</v>
+                            </o>
+                            <v n="LValue">true</v>
+                            <v n="Boolean">false</v>
+                            <v n="IsInstance">false</v>
+                            <v n="Id">36L</v>
                           </o>
                           <o>
                             <v n="Operand">"abOUT_HE_Fault"</v>
@@ -196,12 +247,18 @@ END_VAR
                           <v>ENO</v>
                           <v>iOUT_Temperature_Core</v>
                           <v>iOUT_Temperature_Surface</v>
+                          <v>rOUT_mA</v>
+                          <v>bOUT_TC_Core_Fault</v>
+                          <v>bOUT_TC_Surface_Fault</v>
                           <v>abOUT_HE_Fault</v>
                         </l2>
                         <l2 n="Types" cet="String">
                           <v>BOOL</v>
                           <v>INT</v>
                           <v>INT</v>
+                          <v>REAL</v>
+                          <v>BOOL</v>
+                          <v>BOOL</v>
                           <v>ARRAY [1..12] OF BOOL</v>
                         </l2>
                       </o>
@@ -211,7 +268,7 @@ END_VAR
                       <n n="STSnippet" />
                       <v n="ContainsExtensibleInputs">false</v>
                       <v n="ProvidesSTSnippet">false</v>
-                      <v n="Id">17L</v>
+                      <v n="Id">33L</v>
                     </o>
                   </l2>
                   <l2 n="Connectors" />
