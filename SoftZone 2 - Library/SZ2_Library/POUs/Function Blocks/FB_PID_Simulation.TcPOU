@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_PID_Simulation" Id="{2767287b-65b1-4775-82da-89ba53ded375}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PID_Simulation
+VAR_INPUT
+	IN		: REAL;
+	K		: REAL;
+	T		: REAL;
+	Tk		: REAL;
+END_VAR
+VAR_OUTPUT
+	OUT		: REAL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[OUT	:=	(Tk*K*IN+T*OUT)/(T+Tk);]]></ST>
+    </Implementation>
+    <LineIds Name="FB_PID_Simulation">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
