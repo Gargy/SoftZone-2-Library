@@ -10,7 +10,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{09AE995D-F7DD-4E0F-AC35-7F3975EB1B41}" Name="SZ2_Library" PrjFilePath="SZ2_Library\SZ2_Library.plcproj" TmcFilePath="SZ2_Library\SZ2_Library.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{826B6303-24E3-CFEC-896C-3E65CF8301B2}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="SZ2_Library\SZ2_Library.tmc" TmcHash="{4A7F2173-7908-B9A4-6D91-F18350CF725B}">
 					<Name>SZ2_Library Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
